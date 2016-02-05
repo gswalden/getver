@@ -1,0 +1,23 @@
+{
+  "name": "getver",
+  "version": "0.0.0",
+  "description": "Get latest version number of a package from GitHub",
+  "main": "index.js",
+  "scripts": {
+    "preversion": "npm test",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gswalden/getver.git"
+  },
+  "author": "Greg Walden <hi@gsw.nyc>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "github-get": "^0.3.1"
+  }
+}
