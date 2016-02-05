@@ -21,4 +21,4 @@ getver({
 ```
 
 ### Notes
-This is a thin wrapper around [github-get](https://www.npmjs.com/package/github-get), and the options object will pass through to that package. Therefore, you can include a `token` property in order to access private repos.
+This is a thin wrapper around [github-get](https://www.npmjs.com/package/github-get), and the options object will pass-through to that package. Therefore, you can include a `token` property in order to access private repos.
