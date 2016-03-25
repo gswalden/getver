@@ -10,7 +10,10 @@ describe('getver tests', () => {
   it('should work with a valid repo', done => {
     getver({
       username: 'gswalden',
-      repo: 'listver'
+      repo: 'listver',
+      headers: {
+        'User-Agent': 'getver-package'
+      }
     }, (err, ver, pkg) => {
       if (err) return done(err);
       ver.should.match(/^\d+\.\d+\.\d+$/);
