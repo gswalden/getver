@@ -13,10 +13,10 @@ var getver = require('getver');
 getver({
   username: 'gswalden', // GitHub username of package owner
   repo: 'getver' // GitHub repo name of package
-}, function(err, version, package) {
+}, function(err, version, pkg) {
   console.log(err); // null or Error
   console.log(version); // string containing version, i.e. "1.0.0"
-  console.log(package); // object containing entire package.json
+  console.log(pkg); // object containing entire package.json
 });
 ```
 
