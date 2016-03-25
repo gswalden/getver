@@ -12,9 +12,10 @@ describe('getver tests', () => {
       username: 'gswalden',
       repo: 'listver'
     }, (err, ver, pkg) => {
+      if (err) return done(err);
       ver.should.match(/^\d+\.\d+\.\d+$/);
       pkg.should.be.an('object').that.contains.all.keys(['name', 'version']);
-      done(err);
+      done();
     });
   });
 
