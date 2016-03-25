@@ -1,6 +1,6 @@
 {
   "name": "getver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get latest version number of a package from GitHub",
   "main": "index.js",
   "scripts": {
